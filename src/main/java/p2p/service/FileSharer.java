@@ -1,6 +1,13 @@
 package p2p.service;
 
 import java.util.HashMap;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.OutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import p2p.utils.UploadUtils;
 
 public class FileSharer {
     private HashMap<String, File> availableFiles;
